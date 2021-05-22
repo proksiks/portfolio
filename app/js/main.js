@@ -292,7 +292,47 @@ $(window).on("scroll load resize", function () {
 
 //ABOUT__PAGE
 
+  ///COUNT
+  var show = true;
+  var countbox = ".info-holder__stat";
+  $(window).on("scroll load resize", function () {
+    if (!show) return false;
+    var w_top = $(window).scrollTop();
+    var e_top = $(countbox).offset().top;
+    var w_height = $(window).height();
+    var d_height = $(document).height();
+    var e_height = $(countbox).outerHeight();
+    if (w_top + 900 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+      $('.info-holder__num').css('opacity', '1');
+      $('.info-holder__num').spincrement({
+        thousandSeparator: "",
+        duration: 7000
+      });
+      show = false;
+    }
+  });
+  ///COUNT
 
+  ////TABS
+  const tabs = document.querySelector(".wrapper");
+  const tabButton = document.querySelectorAll(".general-tabs__numbers");
+  const contents = document.querySelectorAll(".general-tabs__bot-steps");
+  tabs.onclick = e => {
+    const id = e.target.dataset.id;
+    if (id) {
+      tabButton.forEach(btn => {
+        btn.classList.remove("_active");
+      });
+      e.target.classList.add("_active");
+
+      contents.forEach(content => {
+        content.classList.remove("_active");
+      });
+      const element = document.getElementById(id);
+      element.classList.add("_active");
+    }
+  }
+////TABS
 
 
 //ЗАКИНУТЬ НА ОСНОВНУЮ СТРАНИЦУ
