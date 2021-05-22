@@ -856,37 +856,38 @@
 		</div>
 	</div>
 </footer>
-    <script>
-
-///COUNT
-var show = true;
-var countbox = ".info-holder__stat";
-$(window).on("scroll load resize", function () {
-  if (!show) return false;
-  var w_top = $(window).scrollTop();
-  var e_top = $(countbox).offset().top;
-  var w_height = $(window).height();
-  var d_height = $(document).height();
-  var e_height = $(countbox).outerHeight();
-  if (w_top + 900 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-    $('.info-holder__num').css('opacity', '1');
-    $('.info-holder__num').spincrement({
-      thousandSeparator: "",
-      duration: 7000
-    });
-    show = false;
-  }
-});
-///COUNT
-
-
-</script>
-
-
-
-
+    
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+
+      ///COUNT
+      var show = true;
+      var countbox = ".info-holder__stat";
+      $(window).on("scroll load resize", function () {
+        if (!show) return false;
+        var w_top = $(window).scrollTop();
+        var e_top = $(countbox).offset().top;
+        var w_height = $(window).height();
+        var d_height = $(document).height();
+        var e_height = $(countbox).outerHeight();
+        if (w_top + 900 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+          $('.info-holder__num').css('opacity', '1');
+          $('.info-holder__num').spincrement({
+            thousandSeparator: "",
+            duration: 7000
+          });
+          show = false;
+        }
+      });
+      ///COUNT
+
+
+      </script>
+
+
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://unpkg.com/@barba/core"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
