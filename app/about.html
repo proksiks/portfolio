@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Eldas - Новые возможности для вашего бизнеса</title>
+
+
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевики">
+    <meta name="author" content="Автор">
+    <meta name="image" content="./img/logo.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Название">
+    <meta property="og:description" content="Описание">
+    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:url" content="https://example.com">
+
+    <link rel="canonical" href="https://example.com">
+
+    <link rel="preconnect" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="//cdnjs.cloudflare.com">
+    <link rel="preconnect" href="//google-analytics.com">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <meta name="apple-mobile-web-app-title" content="Eldas">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+-->
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="overlay first"></div>
+<div class="overlay second"></div>
+<div class="overlay third"></div>
+    <header class="header">
+  <div class="header__wrap">
+    <div class="header__logo">
+      <a href="index.html"><img src="img/mainpage/logo.png" alt="Логотип"></a>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="#">Портфолио</a></li>
+        <li><a href="#">Страницы</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__other">
+      <div class="header__icons header__lang lang">
+        <div class="dropdown">
+          <div class="btn">
+            <img src="img/mainpage/lang-ru.png" alt="Выбрать язык">
+            <button>Ru</button>
+          </div>
+          <ul class="dropdown-options">
+            <li class="option">
+              <a href="#">Ru</a>
+            </li>
+            <li class="option">
+              <a href="#">En</a>
+            </li>
+            <li class="option">
+              <a href="#">Uk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <span class="header__icons header__purchase purchase" data-da=".header__list-mobile,640,last">
+        <a href=" #">
+          <img src="img/mainpage/cart.png" alt="">
+          <span>3</span>
+        </a>
+      </span>
+      <div class="header__icons header__search search">
+
+        <div class="search-box" data-da=".header__list-mobile,640,0">
+          <input class="search-txt" id="search-txt" type="text" name="" placeholder="Поиск">
+          <a class="search-btn" id="search-btn" href="#">
+            <img src="img/mainpage/search.png" alt="">
+          </a>
+        </div>
+
+      </div>
+      <div class="header__burger" id="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div class="header__layout header__layout-1"></div>
+  <div class="header__layout header__layout-2"></div>
+  <div class="header__layout header__layout-3"></div>
+  <ul class="header__list-mobile" id="header__list-mobile">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="about.html">О нас</a></li>
+    <li><a href="#">Портфолио</a></li>
+    <li><a href="#">Страницы</a></li>
+    <li><a href="#">Блог</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+  </nav>
+</header>
+    <div class="wrapper">
+        <section class="pages-head">
+    <div class="pages-head__layout">
+        <div class="pages-head__layout_items">
+            <div class="pages-head__layout_item pages-head__layout_item-1 wow fadeIn" data-wow-delay="1.6s">
+                <img src="img/aboutpage/leyout-item-1.png" alt="">
+            </div>
+            <div class="pages-head__layout_item pages-head__layout_item-2 wow fadeIn" data-wow-delay="1.8s">
+                <img src="img/aboutpage/leyout-item-2.png" alt="">
+            </div>
+            <div class="pages-head__layout_item pages-head__layout_item-3 wow fadeIn" data-wow-delay="2s">
+                <img src="img/aboutpage/leyout-item-3.png" alt="">
+            </div>
+            <div class="pages-head__layout_item pages-head__layout_item-4 wow fadeIn" data-wow-delay="2.2s">
+                <img src="img/aboutpage/leyout-item-4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="pages-head__content" style="background-image: url(../img/aboutpage/leyout-item-bg.png);">
+        <div class="container">
+            <div class="pages-head__title wow fadeInLeft" data-wow-delay="2.4s">
+                <h2>О нас</h2>
+            </div>
+            <div class="pages-head__descr wow fadeInLeft" data-wow-delay="2.8s">
+                <p>Наша команда рада видеть вас на нашем сайте =)</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-holder">
+    <div class="container">
+        <div class="info-holder__row">
+            <div class="info-holder__inner">
+                <div class="info-holder__subtitle wow fadeInUp" data-wow-delay="0.9s">
+                    <p>О нас</p>
+                </div>
+                <div class="info-holder__title wow fadeInRight" data-wow-delay="1.2s">
+                    <h3>Наша философия</h3>
+                </div>
+                <div class="info-holder__descr wow fadeInLeft" data-wow-delay="1.5s">
+                    <p>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Рот даже
+                        курсивных, вскоре, решила вершину великий предложения рекламных вопрос сих ты своих деревни дал
+                        ее
+                        всеми! Переписали, заголовок скатился!
+                        <br>
+                        <br>
+                        Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Рот даже
+                        курсивных, вскоре, решила вершину великий предложения рекламных вопрос сих ты своих деревни дал
+                        ее
+                        всеми! Переписали, заголовок скатился!
+                    </p>
+                </div>
+                <a class="custom-button wow fadeInUp" data-wow-delay="1.7" href="#">Подробнее</a>
+            </div>
+            <div class="info-holder__img wow bounceInRight" data-wow-delay="1s">
+                <img src="../img/aboutpage/image.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="info-holder info-holder__right">
+    <div class="container">
+        <div class="info-holder__row">
+            <div class="info-holder__stat">
+                <div class="info-holder__item info-holder__item-1  wow zoomIn" data-wow-delay="0.2s">
+                    <div class="info-holder__oval">
+                        <img src="img/aboutpage/oval.png" alt="">
+                    </div>
+                    <div class="info-holder__num">332</div>
+                    <div class="info-holder__text">Проектов завершено</div>
+                </div>
+                <div class="info-holder__item info-holder__item-2  wow zoomIn" data-wow-delay="0.4s">
+                    <div class="info-holder__oval">
+                        <img src="img/aboutpage/oval.png" alt="">
+                    </div>
+                    <div class="info-holder__num">42</div>
+                    <div class="info-holder__text">Среднее время на один проект</div>
+                </div>
+                <div class="info-holder__item info-holder__item-3  wow zoomIn" data-wow-delay="0.6s">
+                    <div class="info-holder__oval">
+                        <img src="img/aboutpage/oval.png" alt="">
+                    </div>
+                    <div class="info-holder__num">129</div>
+                    <div class="info-holder__text">Новых клиентов</div>
+                </div>
+                <div class="info-holder__item info-holder__item-4  wow zoomIn" data-wow-delay="0.8s">
+                    <div class="info-holder__oval">
+                        <img src="img/aboutpage/oval.png" alt="">
+                    </div>
+                    <div class="info-holder__num">8744</div>
+                    <div class="info-holder__text">Рабочих часов</div>
+                </div>
+            </div>
+            <div class="info-holder__inner">
+                <div class="info-holder__subtitle wow fadeInUp" data-wow-delay="0.8s">
+                    <p>наши услугис</p>
+                </div>
+                <div class="info-holder__title wow fadeInRight" data-wow-delay="1s">
+                    <h3>Наша страсть это высокое качество</h3>
+                </div>
+                <div class="info-holder__descr wow fadeInLeft" data-wow-delay="1.2s">
+                    <p>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Рот даже
+                        курсивных, вскоре, решила вершину великий предложения рекламных вопрос сих ты своих деревни дал
+                        ее
+                        всеми! Переписали, заголовок скатился!
+
+                    </p>
+                </div>
+                <a class="custom-button wow fadeInUp" data-wow-delay="1.7" href="#">Подробнее</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="slider-team">
+    <div class="container">
+        <div class="slider-team__inner">
+            <div class="slider-team__subtitle wow fadeInLeft" data-wow-delay="1s">Кто мы такие</div>
+            <div class="slider-team__content">
+                <div class="slider-team__title wow fadeInLeft" data-wow-delay="1.2s">
+                    <h3>Наша Команда</h3>
+                </div>
+            </div>
+            <div class="slider-team__filters">
+                <ul class="slider-team__list">
+                    <li class="wow fadeInUp" data-wow-delay="0.6s _active" data-filter="">Все</li>
+                    <li class="wow fadeInUp" data-wow-delay="0.8s" data-filter=".designer">Дизайнеры</li>
+                    <li class="wow fadeInUp" data-wow-delay="1s" data-filter=".developer">Разработчики</li>
+                    <li class="wow fadeInUp" data-wow-delay="1.2s" data-filter=".offices">Работники офиса</li>
+                    <li class="wow fadeInUp" data-wow-delay="1.4s" data-filter=".marketing">Маркетологи</li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider-team__slider swiper-container wow fadeIn" data-wow-delay="1.8s">
+            <div class="slider-team__wrapper swiper-wrapper">
+                <div class="slider-team__box swiper-slide designer">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-1.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Александр Облак</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide developer">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-2.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Алексей Савков</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide offices">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-3.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Владислав Яшин</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide marketing">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-4.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Марк Марков</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide designer">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-1.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Александр Облак</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide designer">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-2.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Александр Облак</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide developer">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-3.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Алексей Савков</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide developer">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-4.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Алексей Савков</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide offices">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-1.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Владислав Яшин</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide offices">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-2.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Владислав Яшин</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide marketing">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-3.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Марк Марков</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide marketing">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-4.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Марк Марков</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide marketing">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-1.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Марк Марков</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide offices">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-2.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Владислав Яшин</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide developer">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-3.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Алексей Савков</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+                <div class="slider-team__box swiper-slide designer">
+                    <div class="slider-team__img">
+                        <img src="img/aboutpage/team/item-4.jpg" alt="Картинка" />
+                    </div>
+                    <div class="slider-team__descr">
+                        <div class="slider-team__text">
+                            <div class="slider-team__text-top">Александр Облак</div>
+                            <ul class="general__social">
+                                <li class="general__social-vk"><a href="#"><i class="fab fa-vk"></i></a></li>
+                                <li class="general__social-fb"><a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="general__social-inst"><a href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                            <div class="slider-team__text-bot">Далеко-далеко за словесными горами в стране гласных и
+                                согласных живут рыбные тексты. Там, безопасную мир!.</div>
+                        </div>
+                        <a href="#" class="slider-team__show"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="general-tabs">
+    <div class="container">
+        <div class="general-tabs__inner wow fadeInUp" data-wow-delay="0.6s"
+            style="background-image: url(img/aboutpage/tabs-pattern.png);">
+            <div class="general-tabs__layout">
+                <div class="general-tabs__item wow fadeIn" data-wow-delay="0.8s">
+                    <img src="../img/aboutpage/tabs-pattern-item.png" alt="">
+                </div>
+            </div>
+            <div class="general-tabs__content">
+                <div class="general-tabs__top">
+                    <div class="general-tabs__subtitle wow fadeInLeft" data-wow-delay="0.8s">
+                        <h3>HOW IT WORKS</h3>
+                    </div>
+                    <div class="general-tabs__title wow fadeInRight" data-wow-delay="1s">
+                        <p>Check the Process</p>
+                    </div>
+                    <div class="general-tabs__descr wow fadeInUp" data-wow-delay="1.2s">
+                        <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+                            esse
+                            molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                            iusto
+                            odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+                            nulla
+                            facilisi.</p>
+                    </div>
+                </div>
+                <div class="general-tabs__center">
+                    <div class="general-tabs__numbers _active  wow fadeInUp" data-wow-delay="1.4s" data-id="step-one">
+                        1</div>
+                    <div class="general-tabs__numbers  wow fadeInUp" data-wow-delay="1.6s" data-id="step-two">2</div>
+                    <div class="general-tabs__numbers  wow fadeInUp" data-wow-delay="1.8s" data-id="step-three">3
+                    </div>
+                    <div class="general-tabs__numbers  wow fadeInUp" data-wow-delay="2s" data-id="step-four">4</div>
+                </div>
+                <div class="general-tabs__bot wow fadeIn" data-wow-delay="2.4s">
+                    <div class="general-tabs__bot-steps _active" id="step-one">
+                        <div class="general-tabs__ps">
+                            <h4>Стратегии и планирование брендинга.</h4>
+                        </div>
+                        <div class="general-tabs__text">
+                            <p> Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                                Живет реторический повстречался правилами. Переписывается.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="general-tabs__bot-steps" id="step-two">
+                        <div class="general-tabs__ps">
+                            <h4>Стратегии</h4>
+                        </div>
+                        <div class="general-tabs__text">
+                            <p> Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.
+                                Рыбными образ скатился, рекламных вершину, путь своего обеспечивает страна лучше снова
+                                пояс послушавшись свое подпоясал последний имеет назад букв. Дорогу!</p>
+                        </div>
+                    </div>
+                    <div class="general-tabs__bot-steps" id="step-three">
+                        <div class="general-tabs__ps">
+                            <h4>Планирование</h4>
+                        </div>
+                        <div class="general-tabs__text">
+                            <p> Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты.
+                                Жаренные журчит подпоясал коварный семантика которой рот маленькая свою, они грустный
+                                которое страна буквоград снова ты lorem! Пор, дороге они!
+                                Рот безорфографичный образ моей свой своих, использовало толку скатился если
+                                необходимыми своего вершину даль, себя взобравшись, что вопроса букв заголовок! Вскоре,
+                                напоивший безопасную о возвращайся океана ему необходимыми свое строчка.</p>
+                        </div>
+                    </div>
+                    <div class="general-tabs__bot-steps" id="step-four">
+                        <div class="general-tabs__ps">
+                            <h4>Брендинга</h4>
+                        </div>
+                        <div class="general-tabs__text">
+                            <p> Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты.
+                                Путь домах которой точках если? Послушавшись, страну вдали заглавных однажды сбить
+                                заманивший. Вскоре, пояс дорогу. Пор послушавшись строчка продолжил ты?
+                                За деревни журчит свой его злых всемогущая ведущими текстами дороге, грамматики оксмокс
+                                семь наш рекламных рыбными предупреждал, буквенных взгляд власти единственное пустился
+                                алфавит. Образ все вопроса буквоград сбить одна не!
+                                Это домах пор рекламных? Родного живет сбить безорфографичный точках пояс, напоивший
+                                страна что моей знаках вскоре обеспечивает дороге ipsum они возвращайся толку пор имеет
+                                рукописи эта лучше всемогущая прямо подзаголовок!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="general-tabs__button wow fadeInRight" data-wow-delay="2.6s">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="last-news">
+    <div class="container">
+        <div class="last-news__subtitle wow fadeInLeft" data-wow-delay="0.8s">Последние новости</div>
+        <div class="last-news__title wow fadeInRight" data-wow-delay="1s">Последние новости блога</div>
+        <div class="last-news__items">
+            <div class="last-news__item">
+                <div class="last-news__top">
+                    <a href="#" class="last-news__btn wow fadeInUp" data-wow-delay="1.2s">бизнес</a>
+                    <div class="last-news__descr wow fadeInLeft" data-wow-delay="1.4s">Как креативщики, мы часто
+                        сталкиваемся с трудностями ...</div>
+                    <div class="last-news__text wow fadeInRight" data-wow-delay="1.6s">Далеко-далеко за словесными
+                        горами в стране гласных и согласных живут
+                        рыбные тексты. Предложения всемогущая агентство дал но грамматики живет даже букв города
+                        строчка, инициал вдали повстречался родного щеке ведущими диких правилами своего!</div>
+                </div>
+                <div class="last-news__bot">
+                    <div class="last-news__avatar wow fadeInUp" data-wow-delay="1.8s">
+                        <img src="img/aboutpage/news/avatar-1.jpg" alt="">
+                    </div>
+                    <div class="last-news__name wow fadeInLeft" data-wow-delay="2s">автор: <a href="#">Александр
+                            Ерохов</a>,</div>
+                    <div class="last-news__date wow fadeInLeft" data-wow-delay="2.2s">Март 01, 2021</div>
+                </div>
+            </div>
+            <div class="last-news__item">
+                <div class="last-news__top">
+                    <a href="#" class="last-news__btn wow fadeInUp" data-wow-delay="1.2s">бизнес</a>
+                    <div class="last-news__descr wow fadeInLeft" data-wow-delay="1.4s">Как вы можете улучшить бизнес
+                    </div>
+                    <div class="last-news__text wow fadeInRight" data-wow-delay="1.6s">Далеко-далеко за словесными
+                        горами в стране гласных и согласных живут
+                        рыбные тексты.</div>
+                </div>
+                <div class="last-news__bot">
+                    <div class="last-news__avatar wow fadeInUp" data-wow-delay="1.8s">
+                        <img src="img/aboutpage/news/avatar-2.jpg" alt="">
+                    </div>
+                    <div class="last-news__name wow fadeInLeft" data-wow-delay="2s">автор: <a href="#">Фёдор Есин</a>,
+                    </div>
+                    <div class="last-news__date wow fadeInLeft" data-wow-delay="2.2s">Март 21, 2021</div>
+                </div>
+            </div>
+            <div class="last-news__item">
+                <div class="last-news__top">
+                    <a href="#" class="last-news__btn wow fadeInUp" data-wow-delay="1.2s">бизнес</a>
+                    <div class="last-news__descr wow fadeInLeft" data-wow-delay="1.4s">10 Творческих Вдохновляющих
+                        Дизайнов</div>
+                    <div class="last-news__text wow fadeInRight" data-wow-delay="1.6s">Далеко-далеко за словесными
+                        горами в стране гласных и согласных живут
+                        рыбные тексты. Обеспечивает власти, продолжил которое агентство рукопись рыбными она текста
+                        курсивных.</div>
+                </div>
+                <div class="last-news__bot">
+                    <div class="last-news__avatar wow fadeInUp" data-wow-delay="1.8s">
+                        <img src="img/aboutpage/news/avatar-3.jpg" alt="">
+                    </div>
+                    <div class="last-news__name wow fadeInLeft" data-wow-delay="2s">автор: <a href="#">Игорь
+                            Портков</a>,</div>
+                    <div class="last-news__date wow fadeInLeft" data-wow-delay="2.2s">Апрель 01, 2021</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="vendors">
+    <div class="container">
+        <ul class="vendors__wrap">
+            <li class="wow fadeInDown" data-wow-delay="0.2s"><a href="#"><img src="img/mainpage/vendor-1.png"
+                        alt=""></a>
+            </li>
+            <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="#"><img src="img/mainpage/vendor-2.png"
+                        alt=""></a>
+            </li>
+            <li class="wow fadeInDown" data-wow-delay="0.6s"><a href="#"><img src="img/mainpage/vendor-3.png"
+                        alt=""></a>
+            </li>
+            <li class="wow fadeInDown" data-wow-delay="0.8s"><a href="#"><img src="img/mainpage/vendor-4.png"
+                        alt=""></a>
+            </li>
+            <li class="wow fadeInDown" data-wow-delay="1s"><a href="#"><img src="img/mainpage/vendor-5.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+</section>
+    </div>
+    <footer class="footer wow fadeIn" data-wow-delay="0.5s">
+	<div class="container">
+		<div class="footer__map">
+			<div class="footer__row">
+				<div class="footer__col footer__logo">
+					<a href="index.html"><img src="img/mainpage/footer-logo.png" alt=""></a>
+				</div>
+				<ul class="footer__col">
+					<div class="footer__title">
+						<h3>Компания</h3>
+					</div>
+					<ul class="footer__list">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Наша команда</a> </li>
+						<li><a href="#">Карьера</a><a class="footer__job" href="#">Вакансии</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</ul>
+				<ul class="footer__col">
+					<div class="footer__title">
+						<h3>Ресурсы</h3>
+					</div>
+					<ul class="footer__list">
+						<li><a href="#">Поддержка</a></li>
+						<li><a href="#">Блог</a> </li>
+						<li><a href="#">Пресс-кит</a></li>
+						<li><a href="#">Онлайн чат</a></li>
+					</ul>
+				</ul>
+				<ul class="footer__col">
+					<div class="footer__title">
+						<h3>О нас</h3>
+					</div>
+					<ul class="footer__list">
+						<li><a href="#">Особенности</a></li>
+						<li><a href="#">Как это работает</a> </li>
+						<li><a href="#">Планы и цены</a></li>
+						<li><a href="#">Войти</a></li>
+					</ul>
+				</ul>
+				<ul class="footer__col footer__contacts">
+					<div class="footer__title">
+						<h3>связаться с нами</h3>
+					</div>
+					<ul class="footer__list footer__list-contact">
+						<li>
+							<span class="footer__markers">
+								<img src="img/mainpage/marker.png" alt="">
+							</span>
+							<a href="https://yandex.ru/maps/geo/samara/53105316/?ll=50.101783%2C53.195538&utm_source=main_stripe_big&z=12"
+								target="_blank" rel="noreferrer">Самарская область, город Самара</a>
+						</li>
+						<li>
+							<span class="footer__markers">
+								<img src="img/mainpage/phone.png" alt="">
+							</span>
+							<a href="tel:88005553535">8 (800) 555-35-35</a>
+						</li>
+						<li>
+							<span class="footer__markers">
+								<img src="img/mainpage/phone.png" alt="">
+							</span>
+							<a href="#" target="_blank">Вконтакте</a>
+						</li>
+						<li>
+							<span class="footer__markers">
+								<span>@</span>
+							</span>
+							<a href="mailto:proksik49032@mail.ru">proksik49032@mail.ru</a>
+						</li>
+					</ul>
+				</ul>
+			</div>
+			<div class="footer__row footer__policy">
+				<p>Авторские права 2021 © ProKsiK | Все права защищены</p>
+			</div>
+		</div>
+	</div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
