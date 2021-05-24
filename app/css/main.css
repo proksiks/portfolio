@@ -224,7 +224,8 @@
           text-decoration: none;
           display: inline-block;
           padding: 10px 16px;
-          color: #2975da; }
+          color: #2975da;
+          border-bottom: 2px solid rgba(255, 255, 255, 0); }
           .header .dropdown .dropdown-options li a:hover {
             border-bottom: 2px solid #4f4986;
             color: #4f4986; }
@@ -1351,6 +1352,9 @@
   .info-holder__item-4 .info-holder__oval {
     -webkit-animation: oval 5s linear infinite;
     animation: oval 5s linear infinite; }
+  .info-holder__item img {
+    width: 130px;
+    height: 130px; }
 
 .info-holder__oval {
   position: absolute;
