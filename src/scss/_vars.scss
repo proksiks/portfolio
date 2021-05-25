@@ -1,0 +1,19 @@
+//MIXIN
+$maxWidth: 1920;
+@import "./mixins/font-face";
+
+// COLORS
+$blc: #000;
+$wht: #fff;
+$clr: #2f2f2f;
+// Шритфы
+
+$ff: "Montserrat", sans-serif;
+$ffs: "SegoeUI";
+$ffw: "Work Sans", sans-serif;
+$ffp: "Playfair";
+
+// Шритфы
+
+$primary: #2975da;
+$easing: cubic-bezier(0.5, 2, 0.5, 0.75);

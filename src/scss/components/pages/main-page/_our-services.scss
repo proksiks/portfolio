@@ -1,0 +1,38 @@
+.our-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // .our-services__body
+  &__body {
+    max-width: 90%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  // .our-services__descr
+  &__descr {
+    font-size: 14px;
+    color: #899ea7;
+    text-transform: uppercase;
+  }
+  // .our-services__title
+  &__title {
+    margin: 0 0 20px 0;
+    @include adaptiv-font(60, 20);
+  }
+  // .our-services__text
+  &__text {
+    font-size: 15px;
+    line-height: 24px;
+    max-width: 70%;
+  }
+  // .our-services__image
+  &__image {
+    flex: 0 0 60%;
+    margin: 0 -9% 0 0;
+    img {
+      max-width: 100%;
+    }
+  }
+}

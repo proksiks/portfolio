@@ -1,0 +1,135 @@
+.info-holder {
+  // .info-holder__row
+
+  &__row {
+    display: flex;
+    align-items: center;
+    margin: 125px 0;
+  }
+
+  // .info-holder__inner
+
+  &__inner {
+    padding: 0 35px 0 0;
+  }
+
+  // .info-holder__subtitle
+
+  &__subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #899ea7;
+  }
+
+  // .info-holder__title
+
+  &__title {
+    line-height: 1;
+    font-family: $ffs;
+    @include adaptiv-font(60, 16);
+    margin: 0 0 40px 0;
+    h3 {
+      margin: 0;
+    }
+  }
+
+  // .info-holder__descr
+
+  &__descr {
+    font-size: 15px;
+    font-family: $ffw;
+  }
+
+  // .info-holder__img
+
+  &__img {
+    position: relative;
+    flex: 0 0 50%;
+    width: 570px;
+    height: 540px;
+    border-radius: 5px;
+    img {
+      border-radius: 5px;
+      object-fit: cover;
+      position: absolute;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+
+  // .info-holder__right
+
+  &__right {
+    .info-holder__inner {
+      padding: 0 0 0 100px;
+      text-align: right;
+    }
+  }
+
+  // .info-holder__stat
+
+  &__stat {
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  // .info-holder__item
+
+  &__item {
+    position: relative;
+    flex: 0 0 50%;
+    margin: 20px 0;
+    // .info-holder__item-1
+    &-1 {
+      .info-holder__oval {
+        animation: oval 3s linear infinite;
+      }
+    }
+    // .info-holder__item-2
+    &-2 {
+      .info-holder__oval {
+        animation: oval 4s linear infinite;
+      }
+    }
+    // .info-holder__item-3
+    &-3 {
+      .info-holder__oval {
+        animation: oval 2s linear infinite;
+      }
+    }
+    // .info-holder__item-4
+    &-4 {
+      .info-holder__oval {
+        animation: oval 5s linear infinite;
+      }
+    }
+    img {
+      width: 130px;
+      height: 130px;
+    }
+  }
+
+  // .info-holder__oval
+  &__oval {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+  // .info-holder__num
+  &__num {
+    padding: 17% 0;
+    font-family: $ffs;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  // .info-holder__text
+  &__text {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

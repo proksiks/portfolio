@@ -1,0 +1,281 @@
+
+@media (max-width: 1040px) {
+  .top-content {
+    &__col {
+      &:first-child {
+        margin: 0 20px;
+        padding: 10px 0 0 0;
+      }
+      &:last-child {
+        margin: 0 20px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .our-services {
+    flex-direction: column;
+    justify-content: center;
+    &__body {
+      max-width: 76%;
+      margin: 0 auto;
+    }
+    &__content {
+      position: relative;
+    }
+    &__title {
+      margin: 20px 0;
+    }
+    &__text {
+      max-width: 100%;
+    }
+    &__image {
+      margin: 0 0 -10% 0;
+    }
+  }
+  .our-services-left {
+    flex-direction: column-reverse;
+    .our-services__body {
+      margin: 0 auto;
+      text-align: left;
+      max-width: 76%;
+      align-items: flex-start;
+    }
+    .our-services__text {
+      max-width: 100%;
+    }
+    .our-services__image {
+      margin: 0;
+    }
+  }
+  .reviews {
+    &__layout {
+      display: none;
+    }
+    &__content {
+      padding: 0;
+      position: relative;
+      transform: none;
+    }
+    &__wrap {
+      flex-direction: column;
+    }
+    &__inner {
+      margin: 20px 0 0 0;
+    }
+    &__descr {
+      color: #3a4366;
+    }
+    &__title {
+      color: #3a4366;
+    }
+    &__btn {
+      color: #3a4366;
+      border: 2px solid #3a4366;
+    }
+    &__pagination {
+      text-align: center;
+      margin: 40px 0 0;
+    }
+  }
+}
+@media (max-width: 1023px) {
+  .top-content {
+    &__col {
+      transition: none;
+    }
+  }
+  .vendors {
+    &__wrap {
+      margin: 50px 0;
+    }
+  }
+  .steps {
+    margin: 20px 0 0 0;
+    &__row {
+      display: block;
+    }
+  }
+  .portfolio {
+    margin: 40px 0 0;
+    &__slider {
+      margin: 20px 0 0;
+    }
+  }
+  .skills {
+    &__num {
+      left: 50%;
+      transform: translateX(-20%);
+    }
+    &__img {
+      margin: 0 auto;
+    }
+    &__item {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .top-content {
+    display: block;
+    &__layout {
+      position: absolute;
+    }
+    &__row {
+      position: relative;
+      display: block;
+      margin: 0;
+    }
+    &__col {
+      color: $clr;
+      text-align: center;
+      &:first-child {
+        margin: 0 27%;
+      }
+      &:last-child {
+        margin: 8% 5% 3% 5%;
+      }
+      h1 {
+        color: inherit;
+        text-shadow: none;
+      }
+      p {
+        color: inherit;
+        max-width: 100%;
+        text-shadow: none;
+      }
+    }
+    &__stars {
+      .star {
+        &-9 {
+          display: none;
+        }
+      }
+    }
+  }
+  .vendors {
+    &__wrap {
+      margin: 0;
+      flex-direction: column;
+      a {
+        margin: 10px 0;
+      }
+    }
+  }
+  .vendors-main {
+    .vendors__wrap {
+      margin: 20px 0;
+    }
+  }
+  .our-services {
+    &__body {
+      max-width: 100%;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
+    &__text {
+      max-width: 100%;
+    }
+  }
+  .our-services-left {
+    .our-services__body {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+    .our-services__text {
+      max-width: 100%;
+    }
+  }
+  .portfolio {
+    &__box {
+      &.swiper-slide-active {
+        .portfolio__img {
+          img {
+            transform: scale(1.1);
+          }
+        }
+        .portfolio__descr {
+          opacity: 1;
+          bottom: -89px;
+          pointer-events: all;
+        }
+      }
+    }
+    &__title {
+      margin: 10px 0 0 0;
+    }
+    &__content {
+      display: block;
+    }
+  }
+  .skills {
+    &__items {
+      margin: 0;
+    }
+    &__item {
+      margin: 0 0 20px 0;
+    }
+  }
+  .reviews {
+    &__title {
+      margin: 0;
+    }
+    &__slider {
+      width: 100%;
+    }
+    &__slide {
+      max-width: 100%;
+      padding: 0;
+    }
+    &__top {
+      padding: 30px 30px 0 30px;
+    }
+    &__bot {
+      padding: 10px 30px 30px 30px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .top-content {
+    &__stars {
+      .star {
+        &-1 {
+          display: none;
+        }
+        &-2 {
+          display: none;
+        }
+        &-10 {
+          display: none;
+        }
+        &-14 {
+          display: none;
+        }
+      }
+    }
+  }
+  .description {
+    margin: 20px 0 0 0;
+  }
+  .steps {
+    margin: 0;
+  }
+  .our-services-left {
+    .our-services__image {
+      margin: 0 0 0 -10%;
+    }
+  }
+  .portfolio {
+    &__slider {
+      display: block;
+    }
+    &__list {
+      display: inline-block;
+      li {
+        display: inline-block;
+        margin: 10px 20px 10px 0;
+      }
+    }
+  }
+}

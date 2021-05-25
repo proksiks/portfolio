@@ -1,0 +1,16 @@
+@import "vars";
+//
+@import "./components/all";
+
+@import "./components/header";
+
+
+// main content
+
+@import "./components/partial/main-page";
+@import "./components/partial/about-page";
+
+// main content
+
+@import "./components/footer";
+//

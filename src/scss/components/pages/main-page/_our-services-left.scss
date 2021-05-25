@@ -1,0 +1,15 @@
+.our-services-left {
+  .our-services__body {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 76%;
+    align-items: flex-start;
+  }
+  .our-services__text {
+    max-width: 56%;
+  }
+  .our-services__image {
+    flex: 0 0 64%;
+    margin: 0 0 0 -24%;
+  }
+}

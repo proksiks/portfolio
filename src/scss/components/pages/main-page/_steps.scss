@@ -1,0 +1,31 @@
+.steps {
+  // .steps__row
+  margin: 120px 0 200px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .steps__col
+
+  &__col {
+    max-width: 350px;
+    text-align: center;
+    margin: 40px auto 0;
+    padding: 0 15px;
+  }
+
+  // .steps__descr
+
+  &__descr {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  // .steps__text
+
+  &__text {
+    font-size: 15px;
+  }
+}
